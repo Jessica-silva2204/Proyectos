@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" class="pantalla" id="pantalla" readonly>
+        
+        <div class="botones">
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+            <button onclick="agregar('/')">/</button>
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+            <button onclick="agregar('*')">*</button>
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+            <button onclick="agregar('-')">-</button>
+            <button onclick="agregar('0')">0</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="agregar('+')">+</button>
+            <button onclick="limpiar()">C</button>
+        </div>
+
+        <div class="opciones-container">
+            <div class="opciones">
+                <h3>Calcular Distancia</h3>
+                <input type="number" id="x1" placeholder="X1">
+                <input type="number" id="y1" placeholder="Y1">
+                <input type="number" id="x2" placeholder="X2">
+                <input type="number" id="y2" placeholder="Y2">
+                <button id="btnDistancia">Calcular Distancia</button>
+                
+            </div>
+            <div class="opciones">
+                <h3>Calcular Raíz</h3>
+                <input type="number" id="coef1" placeholder="Coeficiente 1 (x^4)">
+                <input type="number" id="coef2" placeholder="Coeficiente 2 (x^3)">
+                <input type="number" id="coef3" placeholder="Coeficiente 3 (x^2)">
+                <input type="number" id="coef4" placeholder="Coeficiente 4 (x)">
+                <input type="number" id="coef5" placeholder="Constante">
+                <button id="btnRaizPolinomio">Calcular Raíces</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

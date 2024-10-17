@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Universitaria</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quienes-somos">Quienes somos</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="#nuevas-adquisiciones">Adquisiciones</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
+                <li><a href="#foro">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page Section -->
+    <section id="landing-page">
+        <h1>Bienvenidos a la Biblioteca Universitaria</h1>
+        <p>Descubre un mundo de conocimiento y recursos académicos a tu alcance.</p>
+        <button onclick="learnMore()">Conoce más</button>
+    </section>
+
+    <!-- Quienes somos Section -->
+    <section id="quienes-somos">
+        <h2>Quienes somos</h2>
+        <p>Nuestra misión es proporcionar acceso a recursos de información que apoyen el aprendizaje, la enseñanza y la investigación de la comunidad universitaria.</p>
+        <div class="personal">
+            <h3>Nuestro Equipo</h3>
+            <ul>
+                <li>Leonardo Mosquera</li>
+                <li>Christian Gaviria</li>
+                <li>Jessica Silva</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Mapa físico/Video virtual -->
+    <section id="mapa">
+        <h2>Mapa de la Biblioteca</h2>
+        <iframe src="https://www.google.com/maps/embed?... (tu enlace de Google Maps)" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2>Tour Virtual</h2>
+        <video controls width= "600">
+            <source src="tour-virtual.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
+
+    <!-- Contactos  -->
+    <section id="contactos">
+        <h2>Contactos</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Catálogo  -->
+    <section id="catalogo">
+        <h2>Catálogo</h2>
+        <p>Busca libros, revistas y otros materiales disponibles en nuestra biblioteca.</p>
+        <input type="text" id="search-catalog" placeholder="Buscar en el catálogo...">
+        <button onclick="searchCatalog()">Buscar</button>
+        <div id="catalog-results"></div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Servicios bibliotecarios y tecnológicos</h2>
+        <ul>
+            <li>Préstamo de libros</li>
+            <li>Salas de estudio</li>
+            <li>Acceso a computadoras</li>
+            <li>Asesoría en investigación</li>
+        </ul>
+    </section>
+
+    <!-- Publicaciones, Bases de Datos -->
+    <section id="publicaciones">
+        <h2>Publicaciones y Bases de Datos</h2>
+        <p>Accede a nuestras revistas científicas y bases de datos académicas.</p>
+        <button onclick="window.location.href='https://www.sciencedirect.com/'">ScienceDirect</button>
+        <button onclick="window.location.href='https://scholar.google.com/'">Google Académico</button>
+    </section>
+
+    <!-- Nuevas adquisiciones -->
+    <section id="nuevas-adquisiciones">
+        <h2>Nuevas adquisiciones</h2>
+        <p>Descubre los últimos libros y materiales añadidos a nuestra colección.</p>
+        <ul>
+            <li>"Innovaciones en Inteligencia Artificial" - 2023</li>
+            <li>"Avances en Biotecnología" - 2024</li>
+            <li>"Economía Global y Mercados" - 2024</li>
+        </ul>
+    </section>
+
+    <!-- Enlaces a otros sitios -->
+    <section id="enlaces">
+        <h2>Enlaces a otros sitios</h2>
+        <ul>
+            <li><a href="https://www.bne.es/es/Inicio/index.html" target="_blank">Biblioteca Nacional de España</a></li>
+            <li><a href="https://www.universidad.edu.pe/" target="_blank">Universidad Nacional</a></li>
+            <li><a href="https://www.recursosbibliotecarios.org/" target="_blank">Recursos Bibliotecarios</a></li>
+        </ul>
+    </section>
+
+    <!-- Foro temático Section -->
+    <section id="foro">
+        <h2>Foro Temático</h2>
+        <p>Participa en discusiones académicas en nuestro foro.</p>
+        <button onclick="window.location.href='foro.html'">Ingresar al Foro</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Biblioteca Universitaria</p>
+        <p>Siguenos en:</p>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram" width="30"></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Raíz Cuadrada</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar el CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Raíz Cuadrada</h1>
+        
+        <form id="calculadoraForm">
+            <label for="inputNumero">Ingrese un número:</label>
+            <input type="text" id="inputNumero" placeholder="Escriba un número positivo">
+            
+            <button id="btnCalcular" type="button">Calcular Raíz Cuadrada</button>
+
+            <p id="resultado" class="resultado"></p>
+            <p id="errorMensaje" class="error"></p>
+        </form>
+
+        <!-- Mostrar el contador -->
+        <p id="contador">Número de cálculos realizados: 0</p>
+
+        <!-- Botón con movimiento -->
+        <button id="btnMover" type="button">¡Hazme Clic!</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlazar el archivo JS -->
+</body>
+</html>

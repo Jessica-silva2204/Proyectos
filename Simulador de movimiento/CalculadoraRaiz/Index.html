@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculdora de Raiz Cuadrada</h1>
+        
+        <!-- Botón que cambia de posición -->
+        <button id="btnMover" class="btn">Moverme</button>
+
+        <!-- TextField para ingresar un número -->
+        <div class="input-group">
+            <input type="text" id="inputNumero" placeholder="Ingresa un número">
+            <button id="btnRaiz" class="btn">Calcular raíz</button>
+        </div>
+
+        <!-- TextField para mostrar la raíz cuadrada -->
+        <input type="text" id="resultadoRaiz" readonly placeholder="Resultado raíz cuadrada">
+
+        <!-- Botón con contador de clics -->
+        <button id="btnContador" class="btn">Contador de Clics</button>
+        
+        <!-- TextField para mostrar el contador -->
+        <input type="text" id="contadorClicks" readonly placeholder="Total clics">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.container {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #ffb3b3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ffc1c1;
+    outline: none;
+    transition: border 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #ff8c8c;
+}
+
+input[readonly] {
+    background-color: #e0e0e0;
+}
+
+.sqrt-container, .click-counter {
+    margin-top: 20px;
+}
+
+input[readonly] {
+    background-color: #f1f3f5;
+    cursor: not-allowed;
+}
+
+/* Animación suave al mover el botón */
+@keyframes moverBoton {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.btn-move {
+    animation: moverBoton 0.4s ease-in-out;
+}
+
+/*  colores pastel al fondo y más dinamismo */
+body {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.container {
+    background-color: #f0f4c3;
+}
+
+input[type="text"], input[readonly] {
+    background-color: #fff8e1;
+    border: 2px solid #ffe082;
+}
+
+.btn {
+    background-color: #ffccbc;
+}
+
+.btn:hover {
+    background-color: #ffab91;
+}
+
+
+
+
+

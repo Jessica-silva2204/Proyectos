@@ -1,0 +1,136 @@
+/* Estilos predeterminados */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo del cuerpo con un degradado suave en colores pastel */
+body {
+    background: linear-gradient(135deg, #f9e7f5, #e3f5fc, #fce3e1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos de la calculadora */
+.calculadora {
+    background: linear-gradient(145deg, #fff0f5, #e6e6fa);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    width: 600px; 
+}
+
+/* Pantalla de la calculadora */
+.pantalla {
+    background-color: #f8f8ff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    color: #333;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #e0f7fa, #ffccbc);
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover y active para los botones */
+button:hover {
+    background: linear-gradient(135deg, #ffe0b2, #ffcccb);
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilos especiales para los botones personalizados */
+button#btnDistancia, button#btnRaizPolinomio {
+    background: linear-gradient(135deg, #bbdefb, #ffecb3);
+    color: #444;
+}
+
+button#btnDistancia:hover, button#btnRaizPolinomio:hover {
+    background: linear-gradient(135deg, #ffe0b2, #ffcccb);
+}
+
+/* Ajustes visuales generales */
+button:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor de opciones */
+.opciones-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los cuadros */
+    margin-top: 20px;
+}
+
+/* Estilos para los cuadros de Distancia y Raíz */
+.opciones {
+    background: linear-gradient(135deg, #ffe3e3, #d9e8ff);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+}
+
+/* Estilo para los encabezados dentro de las opciones */
+.opciones h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5d5c61;
+}
+
+/* Estilo para los inputs dentro de las opciones */
+.opciones input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para botones dentro de opciones */
+.opciones button {
+    background-color: #f3d8f3; 
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.opciones button:hover {
+    background-color: #ddb6dd; 
+}
