@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📩 Solicitud de Soporte</h1>
+        <p>Completa el formulario y te asignaremos un número de ticket.</p>
+
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" required>
+
+            <label for="servicio">Selecciona un servicio:</label>
+            <select id="servicio">
+                <option value="soporte">Soporte Técnico</option>
+                <option value="consulta">Consulta General</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
